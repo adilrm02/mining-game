@@ -546,9 +546,6 @@ def history():
             'peer_id': peer_id
         })
     return jsonify({'ok': True, 'items': result, 'page': page, 'pages': (total+per_page-1)//per_page})
-
-if __name__ == '__main__':
-    app.run(debug=True) 
 import os
 
 if __name__ == "__main__":
